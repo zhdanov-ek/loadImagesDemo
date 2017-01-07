@@ -24,11 +24,25 @@
             android:gravity="center"
             android:orientation="horizontal">
 
+
+            <Button
+                android:id="@+id/btnGlide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Glide" />
+
+            <Button
+                android:id="@+id/btnPicasso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="Picasso" />
             <Button
                 android:id="@+id/btnLoad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Load" />
+                android:enabled="false"
+                android:text="Load All" />
 
         </LinearLayout>
 
