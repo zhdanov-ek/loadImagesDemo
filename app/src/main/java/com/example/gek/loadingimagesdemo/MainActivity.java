@@ -113,13 +113,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .fitCenter()
                 .into(ivG0);
 
+
+
         // Включаем кеширование на диске оригинала изображения.
         // Такое же кеширование нужно указать и в другом активити где это изображение будет выводиться
         // в другом разрешении
+        CircleTransform circleTransform = new CircleTransform(this);
+        BlurTransformation blurTransformation = new BlurTransformation(this);
+
         Glide.with(ctx)
                 .load(links.get(1))
                 .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                 .fitCenter()
+                .transform(circleTransform)
                 .into(ivG1);
         Glide.with(ctx)
                 .load(links.get(2))
@@ -176,4 +182,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         ctx.startActivity(intent);
     }
+
+
 }

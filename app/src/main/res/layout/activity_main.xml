@@ -64,7 +64,7 @@
                     android:id="@+id/ivG0"
                     android:layout_width="@dimen/image_size"
                     android:layout_height="@dimen/image_size"
-                    android:background="@color/colorAccent"
+                    tools:background="@color/colorAccent"
                     android:layout_margin="10dp"/>
 
                 <ImageView
@@ -72,29 +72,29 @@
                     android:layout_width="@dimen/image_size"
                     android:layout_height="@dimen/image_size"
                     android:layout_margin="10dp"
-                    android:background="@color/colorAccent" />
+                    tools:background="@color/colorAccent" />
 
                 <ImageView
                     android:id="@+id/ivG2"
                     android:layout_width="@dimen/image_size"
                     android:layout_height="@dimen/image_size"
                     android:layout_margin="10dp"
-                    android:background="@color/colorAccent" />
+                    tools:background="@color/colorAccent" />
 
                 <ImageView
                     android:id="@+id/ivG3"
                     android:layout_width="@dimen/image_size"
                     android:layout_height="@dimen/image_size"
                     android:layout_margin="10dp"
-                    android:background="@color/colorAccent" />
+                    tools:background="@color/colorAccent" />
 
                 <ImageView
                     android:id="@+id/ivG4"
                     android:layout_width="@dimen/image_size"
                     android:layout_height="@dimen/image_size"
                     android:layout_margin="10dp"
-                    android:background="@color/colorAccent" />
-            </LinearLayout>
+                    tools:background="@color/colorAccent" />
+            </LinearLayout>>
 
             <LinearLayout
                 android:layout_width="match_parent"
