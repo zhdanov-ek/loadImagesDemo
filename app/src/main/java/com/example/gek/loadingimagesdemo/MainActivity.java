@@ -41,7 +41,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnLoad, btnGlide, btnPicasso;
+    Button btnLoad, btnGlide, btnPicasso, btnDrawable;
     ImageView ivG0, ivG1, ivG2, ivG3, ivG4;
     ImageView ivP0, ivP1, ivP2, ivP3, ivP4;
     ArrayList<String> links;
@@ -60,6 +60,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         links = Photos.getLinks();
         ctx = this;
 
+        btnDrawable = (Button) findViewById(R.id.btnDrawable);
+        btnDrawable.setOnClickListener(clickListener);
         btnLoad = (Button) findViewById(R.id.btnLoad);
         btnLoad.setOnClickListener(clickListener);
         btnGlide = (Button) findViewById(R.id.btnGlide);
@@ -99,6 +101,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case R.id.btnLoad:
                     loadGlide();
                     loadPicasso();
+                    break;
+                case R.id.btnDrawable:
+                    startActivity(new Intent(getBaseContext(), DrawableActivity.class));
                     break;
             }
 

@@ -17,6 +17,18 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.example.gek.loadingimagesdemo.MainActivity">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnDrawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="drawable"/>
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"

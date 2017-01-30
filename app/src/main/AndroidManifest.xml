@@ -17,7 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ShowImageActivity"></activity>
+        <activity android:name=".ShowImageActivity" />
+        <activity android:name=".DrawableActivity"></activity>
     </application>
 
 </manifest>
